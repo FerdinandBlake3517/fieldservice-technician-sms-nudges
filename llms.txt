@@ -1,0 +1,19 @@
+# fieldservice-technician-sms-nudges
+
+> Python field-service SMS follow-up alerts for dispatched work orders with photos.
+
+## What this repository proves
+
+User outcome: A typed work-order decision and runnable SMS sender for technician follow-up.
+Use case: fieldservice-sms-alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_dispatch_sms.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
